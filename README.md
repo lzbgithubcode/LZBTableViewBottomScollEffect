@@ -1,0 +1,2 @@
+# LZBTableViewBottomScollEffect
+tabView滚动的底部效果，比如上拉放大
