@@ -35,6 +35,7 @@ static NSString  *nomalCellID = @"nomalCellID";
       
 }
 
+#pragma mark - tableView的数据源
 - (void)setupTableView
 {
     [self.view addSubview:self.tableView];
@@ -63,11 +64,13 @@ static NSString  *nomalCellID = @"nomalCellID";
     else
         return  [LZBScaleTableViewCell getScaleTableViewCellHeight];
 }
+#pragma mark - tabelViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self pullUpBottomViewScaleWithScrollView:scrollView];
 }
 
+#pragma mark - 上拉放大效果
 - (void)pullUpBottomViewScaleWithScrollView:(UIScrollView *)scrollView
 {
     CGFloat offset = scrollView.contentOffset.y -(scrollView.contentSize.height - ([UIScreen mainScreen].bounds.size.height -naviView_Height));
@@ -107,7 +110,6 @@ static NSString  *nomalCellID = @"nomalCellID";
   if(_cellItems == nil)
   {
       _cellItems = [NSMutableArray array];
-      
       for(NSInteger i = 0; i < 10; i++)
       {
           LZBScaleCellModel *model = [[LZBScaleCellModel alloc]init];

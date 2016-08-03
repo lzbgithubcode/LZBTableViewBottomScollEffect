@@ -56,4 +56,14 @@ typedef NS_ENUM(NSInteger,LZBTableViewSectionType)
 - (CGFloat)lzb_tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath  withSectionModel:(LZBTableViewSectionModel *)sectionModel;
 
 - (NSInteger)lzb_numberOfSectionsInTableView:(UITableView *)tableView WithSections:(NSMutableArray <LZBTableViewSectionModel *>*)sections;
+
+//头部和底部
+- (UIView *)lzb_tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel;
+
+- (UIView *)lzb_tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel;
+
+- (CGFloat)lzb_tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel;
+
+- (CGFloat)lzb_tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section  withSectionModel:(LZBTableViewSectionModel *)sectionModel;
+
 @end

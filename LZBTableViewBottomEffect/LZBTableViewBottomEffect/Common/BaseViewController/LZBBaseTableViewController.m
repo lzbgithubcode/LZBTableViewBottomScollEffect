@@ -76,11 +76,45 @@
        cell = [[UITableViewCell alloc]init];
        cell.textLabel.text = @"cell为空，这个是占位Cell";
     }
-    
-   
     return cell;
-    
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    LZBTableViewSectionModel *sectionModel = [self getSectionModelWithSection:section];
+    return [self lzb_tableView:tableView viewForHeaderInSection:section withSectionModel:sectionModel];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    LZBTableViewSectionModel *sectionModel = [self getSectionModelWithSection:section];
+    return [self lzb_tableView:tableView viewForHeaderInSection:section withSectionModel:sectionModel];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+   LZBTableViewSectionModel *sectionModel = [self getSectionModelWithSection:section];
+    return sectionModel.headerTitle;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    LZBTableViewSectionModel *sectionModel = [self getSectionModelWithSection:section];
+    return sectionModel.footerTitle;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    LZBTableViewSectionModel *sectionModel = [self getSectionModelWithSection:section];
+    return [self lzb_tableView:tableView heightForFooterInSection:section withSectionModel:sectionModel];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    LZBTableViewSectionModel *sectionModel = [self getSectionModelWithSection:section];
+    return [self lzb_tableView:tableView heightForHeaderInSection:section withSectionModel:sectionModel];
+}
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -110,6 +144,7 @@
     return cell;
 }
 
+
 - (NSInteger)lzb_numberOfSectionsInTableView:(UITableView *)tableView WithSections:(NSMutableArray<LZBTableViewSectionModel *> *)sections
 {
     return 1;
@@ -122,6 +157,24 @@
 - (NSInteger)lzb_tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel
 {
     return 1;
+}
+
+- (UIView *)lzb_tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel
+{
+    return nil;
+}
+- (UIView *)lzb_tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel
+{
+    return nil;
+}
+
+- (CGFloat)lzb_tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel
+{
+    return CGFLOAT_MIN;
+}
+- (CGFloat)lzb_tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel
+{
+    return CGFLOAT_MIN;
 }
 
 #pragma mark - private

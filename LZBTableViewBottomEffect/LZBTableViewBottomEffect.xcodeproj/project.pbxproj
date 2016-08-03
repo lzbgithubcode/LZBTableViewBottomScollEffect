@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18085FE81D51D76700EEF5B2 /* ali.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE51D51D76700EEF5B2 /* ali.png */; };
+		18085FE91D51D76700EEF5B2 /* gailun.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE61D51D76700EEF5B2 /* gailun.png */; };
+		18085FEA1D51D76700EEF5B2 /* huolan.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE71D51D76700EEF5B2 /* huolan.png */; };
 		18E8FDFA1D4219D70026DDC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8FDF91D4219D70026DDC4 /* main.m */; };
 		18E8FDFD1D4219D70026DDC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8FDFC1D4219D70026DDC4 /* AppDelegate.m */; };
 		18E8FE031D4219D70026DDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8FE011D4219D70026DDC4 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18085FE51D51D76700EEF5B2 /* ali.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ali.png; sourceTree = "<group>"; };
+		18085FE61D51D76700EEF5B2 /* gailun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gailun.png; sourceTree = "<group>"; };
+		18085FE71D51D76700EEF5B2 /* huolan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huolan.png; sourceTree = "<group>"; };
 		18E8FDF51D4219D70026DDC4 /* LZBTableViewBottomEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZBTableViewBottomEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8FDF91D4219D70026DDC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E8FDFB1D4219D70026DDC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 		18E8FE101D421B210026DDC4 /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
+				18085FE51D51D76700EEF5B2 /* ali.png */,
+				18085FE61D51D76700EEF5B2 /* gailun.png */,
+				18085FE71D51D76700EEF5B2 /* huolan.png */,
 				18E8FE491D4605B40026DDC4 /* hangbing.png */,
 				18E8FE411D45F5940026DDC4 /* jingsheng.png */,
 			);
@@ -326,8 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18085FE81D51D76700EEF5B2 /* ali.png in Resources */,
 				18E8FE081D4219D70026DDC4 /* LaunchScreen.storyboard in Resources */,
 				18E8FE4A1D4605B40026DDC4 /* hangbing.png in Resources */,
+				18085FE91D51D76700EEF5B2 /* gailun.png in Resources */,
+				18085FEA1D51D76700EEF5B2 /* huolan.png in Resources */,
 				18E8FE421D45F5940026DDC4 /* jingsheng.png in Resources */,
 				18E8FE051D4219D70026DDC4 /* Assets.xcassets in Resources */,
 				18E8FE031D4219D70026DDC4 /* Main.storyboard in Resources */,
