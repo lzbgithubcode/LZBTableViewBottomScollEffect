@@ -17,7 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+   
+}
 
+//获取数据源
+- (NSMutableArray<LZBTableViewSectionModel *> *)getAllSectionModels
+{
+    NSMutableArray *tempArray = [NSMutableArray array];
+    LZBTableViewSectionModel *model1 = [[LZBTableViewSectionModel  alloc]init];
+    model1.headerTitle = @"第一组头部";
+    return tempArray;
 }
 
 

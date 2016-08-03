@@ -22,8 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title =@"主页";
-    [self addMainPageModelToEffectModels];
+     self.title =@"主页";
 }
 
 #pragma mark- add model
@@ -42,32 +41,32 @@
     return model;
 }
 
-
-
 #pragma mark- tableView
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+
+- (NSInteger)lzb_numberOfSectionsInTableView:(UITableView *)tableView WithSections:(NSMutableArray<LZBTableViewSectionModel *> *)sections
 {
-    return self.effectModels.count;
+    return sections.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)lzb_tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section withSectionModel:(LZBTableViewSectionModel *)sectionModel
 {
-   static NSString *mainPageCellID = @"cellID";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mainPageCellID];
-    if(cell == nil)
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:mainPageCellID];
-    cell.textLabel.text = self.effectModels[indexPath.row].viewControllerTitle;
-    if(self.effectModels.count-1 != indexPath.row)
+    return sectionModel.tableViewRowArray.count;
+}
+
+- (UITableViewCell *)lzb_first_tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath withSectionModel:(LZBTableViewSectionModel *)sectionModel WithCell:(UITableViewCell *)cell
+{
+    LZBMainPageModel *model =sectionModel.tableViewRowArray[indexPath.row];
+    cell.textLabel.text =model.viewControllerTitle;
+    if(sectionModel.tableViewRowArray.count-1 != indexPath.row)
     {
-     [cell.contentView.layer addSublayer:[self getSeperatorLine]];
+        [cell.contentView.layer addSublayer:[self getSeperatorLine]];
     }
-   
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)lzb_tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath withSectionModel:(LZBTableViewSectionModel *)sectionModel
 {
     return cell_Height;
 }
@@ -90,6 +89,17 @@
 
 #pragma mark-懒加载
 
+- (NSMutableArray<LZBTableViewSectionModel *> *)getAllSectionModels
+{
+    [self addMainPageModelToEffectModels];
+    NSMutableArray *tempArray = [NSMutableArray array];
+    LZBTableViewSectionModel *sectionModel = [[LZBTableViewSectionModel alloc]init];
+    sectionModel.tableViewRowArray = self.effectModels;
+    sectionModel.cellClass = [UITableViewCell class];
+    [tempArray addObject:sectionModel];
+    return tempArray;
+}
+
 - (NSMutableArray<LZBMainPageModel *> *)effectModels
 {
   if(_effectModels == nil)
@@ -98,6 +108,9 @@
   }
     return _effectModels;
 }
+
+
+
 
 
 @end

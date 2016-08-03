@@ -115,8 +115,6 @@ static NSString  *nomalCellID = @"nomalCellID";
           model.coverImage =(i==9)?[UIImage imageNamed:@"hangbing"]:[UIImage imageNamed:@"jingsheng"];
           [_cellItems addObject:model];
       }
-      
-     
   }
     return _cellItems;
 }
