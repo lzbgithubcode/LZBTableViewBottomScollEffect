@@ -31,6 +31,8 @@ typedef NS_ENUM(NSInteger,LZBTableViewSectionType)
 @interface LZBBaseTableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) LZBTableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray <LZBTableViewSectionModel *>*sections;
 //必须重写的方法
 /**
  *  返回组数+每一组的模型

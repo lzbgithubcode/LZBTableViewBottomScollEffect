@@ -14,7 +14,6 @@
 
 @interface LZBBaseTableViewController ()
 
-@property (nonatomic, strong) NSMutableArray <LZBTableViewSectionModel *>*sections;
 
 @property (nonatomic, strong) NSMutableArray <NSString *>*cellIDKeys;
 @end
