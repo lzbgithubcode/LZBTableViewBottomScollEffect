@@ -12,7 +12,8 @@ typedef NS_ENUM(NSInteger, LZBtableViewPullUpEffectType)
 {
     LZBtableViewPullUpEffectType_PullUpScale,  //上拉放大
     LZBtableViewPullUpEffectType_PullUptranslation,  //上拉平移
-    LZBtableViewPullUpEffectType_PullDownScale,  //上拉平移
+    LZBtableViewPullUpEffectType_PullDownScale,  //下拉放大
+    LZBtableViewPullUpEffectType_PullDowntranslation,  //下拉平移
 
 };
 

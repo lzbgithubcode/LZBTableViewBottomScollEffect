@@ -11,6 +11,7 @@
 		18085FE91D51D76700EEF5B2 /* gailun.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE61D51D76700EEF5B2 /* gailun.png */; };
 		18085FEA1D51D76700EEF5B2 /* huolan.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE71D51D76700EEF5B2 /* huolan.png */; };
 		18D8A95C1D7522FC005768A2 /* LZBPullDownScalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8A95B1D7522FC005768A2 /* LZBPullDownScalViewController.m */; };
+		18D8A95F1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8A95E1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m */; };
 		18E8FDFA1D4219D70026DDC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8FDF91D4219D70026DDC4 /* main.m */; };
 		18E8FDFD1D4219D70026DDC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8FDFC1D4219D70026DDC4 /* AppDelegate.m */; };
 		18E8FE031D4219D70026DDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8FE011D4219D70026DDC4 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		18085FE71D51D76700EEF5B2 /* huolan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huolan.png; sourceTree = "<group>"; };
 		18D8A95A1D7522FC005768A2 /* LZBPullDownScalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBPullDownScalViewController.h; sourceTree = "<group>"; };
 		18D8A95B1D7522FC005768A2 /* LZBPullDownScalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBPullDownScalViewController.m; sourceTree = "<group>"; };
+		18D8A95D1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBPullDownTopSpringbackVC.h; sourceTree = "<group>"; };
+		18D8A95E1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBPullDownTopSpringbackVC.m; sourceTree = "<group>"; };
 		18E8FDF51D4219D70026DDC4 /* LZBTableViewBottomEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZBTableViewBottomEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8FDF91D4219D70026DDC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E8FDFB1D4219D70026DDC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 		18D8A9571D75220D005768A2 /* PullDown(下拉顶部回弹) */ = {
 			isa = PBXGroup;
 			children = (
+				18D8A95D1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.h */,
+				18D8A95E1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m */,
 			);
 			path = "PullDown(下拉顶部回弹)";
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 			files = (
 				18E8FE301D42233A0026DDC4 /* LZBTranslationViewController.m in Sources */,
 				18D8A95C1D7522FC005768A2 /* LZBPullDownScalViewController.m in Sources */,
+				18D8A95F1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m in Sources */,
 				18E8FE381D45A7370026DDC4 /* LZBArrayDataSource.m in Sources */,
 				18E8FE251D4220D20026DDC4 /* LZBMainPageModel.m in Sources */,
 				18E8FE3F1D45F0B70026DDC4 /* LZBScaleCellModel.m in Sources */,
