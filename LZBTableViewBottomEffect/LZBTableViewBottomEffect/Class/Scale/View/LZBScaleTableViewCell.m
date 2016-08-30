@@ -55,8 +55,6 @@
   if(_coverImageView == nil)
   {
       _coverImageView = [UIImageView new];
-      _coverImageView.contentMode = UIViewContentModeScaleAspectFill;
-      _coverImageView.clipsToBounds = YES;
   }
     return _coverImageView;
 }

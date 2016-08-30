@@ -48,17 +48,17 @@
 		18E8FE271D4220E70026DDC4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18E8FE2A1D42214E0026DDC4 /* LZBBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBBaseTableViewController.h; sourceTree = "<group>"; };
 		18E8FE2B1D42214E0026DDC4 /* LZBBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBBaseTableViewController.m; sourceTree = "<group>"; };
-		18E8FE2E1D42233A0026DDC4 /* LZBTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBTranslationViewController.h; sourceTree = "<group>"; };
-		18E8FE2F1D42233A0026DDC4 /* LZBTranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBTranslationViewController.m; sourceTree = "<group>"; };
+		18E8FE2E1D42233A0026DDC4 /* LZBTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBTranslationViewController.h; path = ../LZBTranslationViewController.h; sourceTree = "<group>"; };
+		18E8FE2F1D42233A0026DDC4 /* LZBTranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBTranslationViewController.m; path = ../LZBTranslationViewController.m; sourceTree = "<group>"; };
 		18E8FE361D45A7370026DDC4 /* LZBArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBArrayDataSource.h; path = ../../Class/Main/Mode/LZBArrayDataSource.h; sourceTree = "<group>"; };
 		18E8FE371D45A7370026DDC4 /* LZBArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBArrayDataSource.m; path = ../../Class/Main/Mode/LZBArrayDataSource.m; sourceTree = "<group>"; };
-		18E8FE3A1D45D8440026DDC4 /* LZBScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBScaleViewController.h; path = ../LZBScaleViewController.h; sourceTree = "<group>"; };
-		18E8FE3B1D45D8440026DDC4 /* LZBScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBScaleViewController.m; path = ../LZBScaleViewController.m; sourceTree = "<group>"; };
-		18E8FE3D1D45F0B70026DDC4 /* LZBScaleCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBScaleCellModel.h; path = ../LZBScaleCellModel.h; sourceTree = "<group>"; };
-		18E8FE3E1D45F0B70026DDC4 /* LZBScaleCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBScaleCellModel.m; path = ../LZBScaleCellModel.m; sourceTree = "<group>"; };
+		18E8FE3A1D45D8440026DDC4 /* LZBScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBScaleViewController.h; path = ../../LZBScaleViewController.h; sourceTree = "<group>"; };
+		18E8FE3B1D45D8440026DDC4 /* LZBScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBScaleViewController.m; path = ../../LZBScaleViewController.m; sourceTree = "<group>"; };
+		18E8FE3D1D45F0B70026DDC4 /* LZBScaleCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBScaleCellModel.h; path = ../../Class/Scale/LZBScaleCellModel.h; sourceTree = "<group>"; };
+		18E8FE3E1D45F0B70026DDC4 /* LZBScaleCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBScaleCellModel.m; path = ../../Class/Scale/LZBScaleCellModel.m; sourceTree = "<group>"; };
 		18E8FE411D45F5940026DDC4 /* jingsheng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jingsheng.png; sourceTree = "<group>"; };
-		18E8FE461D45F5E40026DDC4 /* LZBScaleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBScaleTableViewCell.h; sourceTree = "<group>"; };
-		18E8FE471D45F5E40026DDC4 /* LZBScaleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBScaleTableViewCell.m; sourceTree = "<group>"; };
+		18E8FE461D45F5E40026DDC4 /* LZBScaleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBScaleTableViewCell.h; path = ../../Class/Scale/View/LZBScaleTableViewCell.h; sourceTree = "<group>"; };
+		18E8FE471D45F5E40026DDC4 /* LZBScaleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBScaleTableViewCell.m; path = ../../Class/Scale/View/LZBScaleTableViewCell.m; sourceTree = "<group>"; };
 		18E8FE491D4605B40026DDC4 /* hangbing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangbing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +73,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D8A9541D752164005768A2 /* PullUpBottom(上拉底部回弹) */ = {
+			isa = PBXGroup;
+			children = (
+				18E8FE2E1D42233A0026DDC4 /* LZBTranslationViewController.h */,
+				18E8FE2F1D42233A0026DDC4 /* LZBTranslationViewController.m */,
+			);
+			path = "PullUpBottom(上拉底部回弹)";
+			sourceTree = "<group>";
+		};
+		18D8A9551D7521A0005768A2 /* PullUpBottom(上拉底部放大) */ = {
+			isa = PBXGroup;
+			children = (
+				18E8FE3A1D45D8440026DDC4 /* LZBScaleViewController.h */,
+				18E8FE3B1D45D8440026DDC4 /* LZBScaleViewController.m */,
+			);
+			name = "PullUpBottom(上拉底部放大)";
+			path = "Controller/PullUpBottom(上拉底部放大)";
+			sourceTree = "<group>";
+		};
+		18D8A9561D7521FB005768A2 /* PullDown(下拉顶部放大) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "PullDown(下拉顶部放大)";
+			path = "Controller/PullDown(下拉顶部放大)";
+			sourceTree = "<group>";
+		};
+		18D8A9571D75220D005768A2 /* PullDown(下拉顶部回弹) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "PullDown(下拉顶部回弹)";
+			sourceTree = "<group>";
+		};
+		18D8A9581D752275005768A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18E8FE3D1D45F0B70026DDC4 /* LZBScaleCellModel.h */,
+				18E8FE3E1D45F0B70026DDC4 /* LZBScaleCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D8A9591D752275005768A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18E8FE461D45F5E40026DDC4 /* LZBScaleTableViewCell.h */,
+				18E8FE471D45F5E40026DDC4 /* LZBScaleTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18E8FDEC1D4219D70026DDC4 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +215,8 @@
 		18E8FE171D421B2B0026DDC4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				18D8A9581D752275005768A2 /* Model */,
+				18D8A9591D752275005768A2 /* View */,
 				18E8FE401D45F3F90026DDC4 /* BaseTableViewDataSource */,
 				18E8FE291D4221240026DDC4 /* BaseViewController */,
 				18E8FE181D421BAD0026DDC4 /* CustomView */,
@@ -226,8 +280,8 @@
 		18E8FE2D1D42231B0026DDC4 /* Translation */ = {
 			isa = PBXGroup;
 			children = (
-				18E8FE2E1D42233A0026DDC4 /* LZBTranslationViewController.h */,
-				18E8FE2F1D42233A0026DDC4 /* LZBTranslationViewController.m */,
+				18D8A9571D75220D005768A2 /* PullDown(下拉顶部回弹) */,
+				18D8A9541D752164005768A2 /* PullUpBottom(上拉底部回弹) */,
 			);
 			path = Translation;
 			sourceTree = "<group>";
@@ -235,9 +289,8 @@
 		18E8FE391D45D81E0026DDC4 /* Scale */ = {
 			isa = PBXGroup;
 			children = (
-				18E8FE431D45F5C50026DDC4 /* Controller */,
-				18E8FE441D45F5C50026DDC4 /* Model */,
-				18E8FE451D45F5C50026DDC4 /* View */,
+				18D8A9561D7521FB005768A2 /* PullDown(下拉顶部放大) */,
+				18D8A9551D7521A0005768A2 /* PullUpBottom(上拉底部放大) */,
 			);
 			path = Scale;
 			sourceTree = "<group>";
@@ -249,33 +302,6 @@
 				18E8FE371D45A7370026DDC4 /* LZBArrayDataSource.m */,
 			);
 			path = BaseTableViewDataSource;
-			sourceTree = "<group>";
-		};
-		18E8FE431D45F5C50026DDC4 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				18E8FE3A1D45D8440026DDC4 /* LZBScaleViewController.h */,
-				18E8FE3B1D45D8440026DDC4 /* LZBScaleViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		18E8FE441D45F5C50026DDC4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				18E8FE3D1D45F0B70026DDC4 /* LZBScaleCellModel.h */,
-				18E8FE3E1D45F0B70026DDC4 /* LZBScaleCellModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		18E8FE451D45F5C50026DDC4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				18E8FE461D45F5E40026DDC4 /* LZBScaleTableViewCell.h */,
-				18E8FE471D45F5E40026DDC4 /* LZBScaleTableViewCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

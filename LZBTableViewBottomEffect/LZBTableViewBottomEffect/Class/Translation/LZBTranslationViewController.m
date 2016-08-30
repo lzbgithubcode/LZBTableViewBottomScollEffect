@@ -111,14 +111,16 @@
 {
     LZBScaleTableViewCell *scaleCell = (LZBScaleTableViewCell*)cell;
     LZBScaleCellModel *model = sectionModel.tableViewRowArray[indexPath.row];
-    if(sectionModel.tableViewRowArray.count -1 == indexPath.row)
-    {
-    self.lastCellCenterY = scaleCell.center.y;
-        NSLog(@"++++++++++++++%lf",self.lastCellCenterY);
-    self.lastCell = scaleCell;
-    }
     
+    if(sectionModel.tableViewRowArray.count-1  == indexPath.row)
+    {
+         self.lastCell = scaleCell;
+        self.lastCellCenterY = scaleCell.frame.origin.y;
+       
+    }
     scaleCell.model = model;
+
+ 
     return scaleCell;
 }
 
@@ -176,17 +178,12 @@
    if(offset >0)
    {
       //拿到最后一个cell
-      // LZBTableViewSectionModel *sectionModel = self.sections.lastObject;
-      // LZBScaleTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:sectionModel.tableViewRowArray.count-1 inSection:self.sections.count -1]];
        LZBScaleTableViewCell *cell = self.lastCell;
        CGRect cellFrame = cell.frame;
-       CGPoint cellCenter = cell.center;
-       cellCenter.y = self.lastCellCenterY +offset * 0.5;
-    
+       cellFrame.origin.y = self.lastCellCenterY - offset * 0.5;
        cellFrame.size.height = [LZBScaleTableViewCell getScaleTableViewCellHeight] + offset;
-       cell.bounds = cellFrame;
-       cell.center = cellCenter;
-       NSLog(@"==========%@-----%lf",NSStringFromCGRect(cellFrame), cellCenter.y);
+       cell.coverImageView.bounds = cellFrame;
+       cell.coverImageView.center = CGPointMake(cellFrame.size.width *0.5, cellFrame.size.height *0.5);
    }
 }
 
@@ -216,7 +213,7 @@
        for(NSInteger i = 0; i < 5; i++)
        {
            LZBScaleCellModel *model = [[LZBScaleCellModel alloc]init];
-           model.title =@"test-我是火蓝";
+           model.title = (i < 4)?@"test-我是火蓝":@"火蓝的描述";
            model.coverImage =[UIImage imageNamed:@"huolan"];
            [_fourItems addObject:model];
        }
