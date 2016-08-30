@@ -38,7 +38,7 @@ typedef void(^configCellBlock)(id cell, id item, NSInteger section);
 /**
  *   初始化tablView数据源
  *
- *  @param sectionItems    多组数组(二维数组)
+ *  @param sectionItems    多组数组(数组里面的数组)
  *  @param cellIdentifier  cellID-唯一标识
  *  @param configCellBlock 配置cell回调
  *

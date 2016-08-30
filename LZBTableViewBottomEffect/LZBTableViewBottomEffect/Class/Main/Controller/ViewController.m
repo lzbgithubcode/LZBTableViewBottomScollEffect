@@ -10,6 +10,7 @@
 #import "LZBMainPageModel.h"
 #import "LZBTranslationViewController.h"
 #import "LZBScaleViewController.h"
+#import "LZBPullDownScalViewController.h"
 #define cell_Height  44
 #define line_Height  1
 
@@ -28,8 +29,9 @@
 #pragma mark- add model
 - (void)addMainPageModelToEffectModels
 {
-    [self.effectModels addObject:[self creatSignleModelWithVCName:@"LZBTranslationViewController" Title:@"上拉平移回弹效果" AnimationEffect:LZBtableViewPullUpEffectType_translation]];
-     [self.effectModels addObject:[self creatSignleModelWithVCName:@"LZBScaleViewController" Title:@"上拉放大效果" AnimationEffect:LZBtableViewPullUpEffectType_Scale]];
+    [self.effectModels addObject:[self creatSignleModelWithVCName:@"LZBTranslationViewController" Title:@"上拉平移回弹效果" AnimationEffect:LZBtableViewPullUpEffectType_PullUptranslation]];
+     [self.effectModels addObject:[self creatSignleModelWithVCName:@"LZBScaleViewController" Title:@"上拉放大效果" AnimationEffect:LZBtableViewPullUpEffectType_PullUpScale]];
+     [self.effectModels addObject:[self creatSignleModelWithVCName:@"LZBPullDownScalViewController" Title:@"下拉放大效果" AnimationEffect:LZBtableViewPullUpEffectType_PullDownScale]];
 }
 
 - (LZBMainPageModel *)creatSignleModelWithVCName:(NSString *)name Title:(NSString *)title  AnimationEffect:(LZBtableViewPullUpEffectType)type
