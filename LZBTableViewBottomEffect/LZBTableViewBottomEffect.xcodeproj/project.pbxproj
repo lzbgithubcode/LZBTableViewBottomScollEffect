@@ -10,6 +10,8 @@
 		18085FE81D51D76700EEF5B2 /* ali.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE51D51D76700EEF5B2 /* ali.png */; };
 		18085FE91D51D76700EEF5B2 /* gailun.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE61D51D76700EEF5B2 /* gailun.png */; };
 		18085FEA1D51D76700EEF5B2 /* huolan.png in Resources */ = {isa = PBXBuildFile; fileRef = 18085FE71D51D76700EEF5B2 /* huolan.png */; };
+		185D561C1D769D1F00A53AE9 /* LZBSweepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D561B1D769D1F00A53AE9 /* LZBSweepView.m */; };
+		185D561E1D769DA800A53AE9 /* developerCode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185D561D1D769DA800A53AE9 /* developerCode.jpg */; };
 		18D8A95C1D7522FC005768A2 /* LZBPullDownScalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8A95B1D7522FC005768A2 /* LZBPullDownScalViewController.m */; };
 		18D8A95F1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8A95E1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.m */; };
 		18E8FDFA1D4219D70026DDC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8FDF91D4219D70026DDC4 /* main.m */; };
@@ -34,6 +36,9 @@
 		18085FE51D51D76700EEF5B2 /* ali.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ali.png; sourceTree = "<group>"; };
 		18085FE61D51D76700EEF5B2 /* gailun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gailun.png; sourceTree = "<group>"; };
 		18085FE71D51D76700EEF5B2 /* huolan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huolan.png; sourceTree = "<group>"; };
+		185D561A1D769D1F00A53AE9 /* LZBSweepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSweepView.h; sourceTree = "<group>"; };
+		185D561B1D769D1F00A53AE9 /* LZBSweepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSweepView.m; sourceTree = "<group>"; };
+		185D561D1D769DA800A53AE9 /* developerCode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = developerCode.jpg; sourceTree = "<group>"; };
 		18D8A95A1D7522FC005768A2 /* LZBPullDownScalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBPullDownScalViewController.h; sourceTree = "<group>"; };
 		18D8A95B1D7522FC005768A2 /* LZBPullDownScalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBPullDownScalViewController.m; sourceTree = "<group>"; };
 		18D8A95D1D7548B7005768A2 /* LZBPullDownTopSpringbackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBPullDownTopSpringbackVC.h; sourceTree = "<group>"; };
@@ -168,6 +173,7 @@
 		18E8FDF81D4219D70026DDC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				185D561D1D769DA800A53AE9 /* developerCode.jpg */,
 				18E8FE041D4219D70026DDC4 /* Assets.xcassets */,
 				18E8FE091D4219D70026DDC4 /* Info.plist */,
 				18E8FDF91D4219D70026DDC4 /* main.m */,
@@ -274,6 +280,8 @@
 		18E8FE241D4220D20026DDC4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				185D561A1D769D1F00A53AE9 /* LZBSweepView.h */,
+				185D561B1D769D1F00A53AE9 /* LZBSweepView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -379,6 +387,7 @@
 				18E8FE421D45F5940026DDC4 /* jingsheng.png in Resources */,
 				18E8FE051D4219D70026DDC4 /* Assets.xcassets in Resources */,
 				18E8FE031D4219D70026DDC4 /* Main.storyboard in Resources */,
+				185D561E1D769DA800A53AE9 /* developerCode.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +408,7 @@
 				18E8FE1B1D421BE40026DDC4 /* LZBTableView.m in Sources */,
 				18E8FDFD1D4219D70026DDC4 /* AppDelegate.m in Sources */,
 				18E8FE2C1D42214E0026DDC4 /* LZBBaseTableViewController.m in Sources */,
+				185D561C1D769D1F00A53AE9 /* LZBSweepView.m in Sources */,
 				18E8FE481D45F5E40026DDC4 /* LZBScaleTableViewCell.m in Sources */,
 				18E8FDFA1D4219D70026DDC4 /* main.m in Sources */,
 				18E8FE281D4220E70026DDC4 /* ViewController.m in Sources */,

@@ -12,12 +12,14 @@
 #import "LZBScaleViewController.h"
 #import "LZBPullDownScalViewController.h"
 #import "LZBPullDownTopSpringbackVC.h"
+#import "LZBSweepView.h"
 #define cell_Height  44
 #define line_Height  1
 
 @interface ViewController ()
 
 @property (nonatomic, strong) NSMutableArray <LZBMainPageModel *>*effectModels;
+@property(nonatomic,strong) UIButton *sweepButton;
 @end
 
 @implementation ViewController
@@ -25,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.title =@"主页";
+    [self addLeftSweepButton];
 }
 
 #pragma mark- add model
@@ -43,6 +46,17 @@
     model.viewControllerTitle = title;
     model.type = type;
     return model;
+}
+
+- (void)clickSweep
+{
+    LZBSweepView *sweepView = [[LZBSweepView alloc]init];
+    [sweepView showInSuperView:nil];
+}
+
+- (void)addLeftSweepButton
+{
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.sweepButton];
 }
 
 #pragma mark- tableView
@@ -111,6 +125,20 @@
       _effectModels = [NSMutableArray array];
   }
     return _effectModels;
+}
+
+- (UIButton *)sweepButton
+{
+    if(_sweepButton == nil)
+    {
+        _sweepButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_sweepButton setTitle:@"点我才知道" forState:UIControlStateNormal];
+        [_sweepButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _sweepButton.backgroundColor = [UIColor blueColor];
+        _sweepButton.frame =CGRectMake(0, 0, 100, 30);
+        [_sweepButton addTarget:self action:@selector(clickSweep) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _sweepButton;
 }
 
 
