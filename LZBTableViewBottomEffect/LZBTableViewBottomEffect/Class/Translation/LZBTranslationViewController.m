@@ -13,7 +13,6 @@
 @interface LZBTranslationViewController ()
 @property (nonatomic, strong) NSMutableArray<LZBScaleCellModel *> *twoItems;
 @property (nonatomic, strong) NSMutableArray<LZBScaleCellModel *> *fourItems;
-@property (nonatomic, assign) CGFloat lastCellCenterY;
 @property (nonatomic, strong) LZBScaleTableViewCell *lastCell;
 
 @end
@@ -115,8 +114,6 @@
     if(sectionModel.tableViewRowArray.count-1  == indexPath.row)
     {
          self.lastCell = scaleCell;
-        self.lastCellCenterY = scaleCell.frame.origin.y;
-       
     }
     scaleCell.model = model;
 
@@ -180,7 +177,6 @@
       //拿到最后一个cell
        LZBScaleTableViewCell *cell = self.lastCell;
        CGRect cellFrame = cell.frame;
-       cellFrame.origin.y = self.lastCellCenterY - offset * 0.5;
        cellFrame.size.height = [LZBScaleTableViewCell getScaleTableViewCellHeight] + offset;
        cell.coverImageView.bounds = cellFrame;
        cell.coverImageView.center = CGPointMake(cellFrame.size.width *0.5, cellFrame.size.height *0.5);
