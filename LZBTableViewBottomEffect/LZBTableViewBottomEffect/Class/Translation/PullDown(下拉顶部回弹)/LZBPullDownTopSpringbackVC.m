@@ -50,7 +50,7 @@ static NSString  *LZBScaleTableViewCellID = @"LZBScaleTableViewCellID";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //下拉放大
+    //下拉回弹
     [self pullDownScrollScaleWithScrollView:scrollView];
 }
 - (void)pullDownScrollScaleWithScrollView:(UIScrollView *)scrollView
