@@ -1,5 +1,6 @@
 # LZBTableViewBottomScollEffect
 ####tabView滚动的底部效果，比如上拉放大
+
 demo技术点：下拉放大、下拉回弹、上拉放大、上拉回弹效果、自定义tableView的dataSouce等
 
 上拉回弹：
@@ -48,7 +49,8 @@ cell.coverImageView.center = CGPointMake(cellFrame.size.width *0.5, cellFrame.si
 
 参数3：block，block里面需要确定每组cell的真实类型，cell模型赋值
 
-/*self.dataSource = [[LZBArrayDataSource alloc]initWithSectionItems:self.sectionArray cellIdentifiers:@[nomalCellID,LZBScaleTableViewCellID] configCellBlock:^(id cell, id item, NSInteger section) {
+self.dataSource = [[LZBArrayDataSource alloc]initWithSectionItems:self.sectionArray cellIdentifiers:@[nomalCellID,LZBScaleTableViewCellID] configCellBlock:^(id cell, id item, NSInteger section)
+{
 if(section == 0)
 {
 UITableViewCell *callBackCell = (UITableViewCell *)cell;
@@ -61,4 +63,4 @@ LZBScaleTableViewCell *callBackCell = (LZBScaleTableViewCell *)cell;
 LZBScaleCellModel *model =  (LZBScaleCellModel *)item;
 callBackCell.model = model;
 }
-}];*/
+}];
