@@ -1,5 +1,5 @@
 # LZBTableViewBottomScollEffect
-####tabView滚动的底部效果，比如上拉放大
+##tabView滚动的底部效果，比如上拉放大
 
 demo技术点：下拉放大、下拉回弹、上拉放大、上拉回弹效果、自定义tableView的dataSouce等
 
@@ -33,7 +33,7 @@ cell.coverImageView.bounds = cellFrame;
 
 cell.coverImageView.center = CGPointMake(cellFrame.size.width *0.5, cellFrame.size.height *0.5);
 
-####自定义tableView的数据源
+##自定义tableView的数据源
 
 第一个问题我们可以采用自定义数据源类来优化。
 
